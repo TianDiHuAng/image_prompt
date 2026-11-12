@@ -15,7 +15,9 @@ AI 生图 / 提示词相关的技能与提示词集合。
 把"一个想法"变成"一段能被模型稳定画出来、有时装行业质感、且像真实照片的描写"。
 
 - **适用模型**：Midjourney、Stable Diffusion、Flux、即梦、可灵、Nano Banana、GPT-image 等
-- **覆盖品类**：针织开衫、毛衣裙、旗袍/新中式、丝袜与鞋履、蕾丝、真丝睡裙、泳装、职业装、礼服露背
+- **人物方向路由**：女性造型 / 男性造型 / 中性·雌雄同体 / 双人同框，各走专属词库（v4）
+- **覆盖品类**：女装——针织开衫、毛衣裙、旗袍/新中式、丝袜与鞋履、蕾丝、真丝睡裙、泳装、职业装、礼服露背；
+  男装——西装、衬衫、大衣、针织与叠穿、鞋靴、中性方向
 - **双模式路由**：`REAL` 写实摄影（默认）/ `PAINTERLY` 2.5D 厚涂，两种模式的肤质词与负面词严禁混用
 - **六种写法模式**：A 模块式、B 叙事分段式、C 随机池式、D 锁定式、E 一段式英文、F 八段式
 - **硬规则：负面词不进正文**——有独立负面输入口（SD/Flux 双框、MJ 的 `--no`）才填负面词；
@@ -27,10 +29,12 @@ AI 生图 / 提示词相关的技能与提示词集合。
 fashion-prompt-artist/
 ├── SKILL.md                                  # 主入口：理念、路由、安全边界、工作流、检查清单
 └── references/
-    ├── garments.md                           # 服装/针织/丝袜/新中式/睡裙/泳装/职业装
+    ├── garments.md                           # 女装：服装/针织/丝袜/新中式/睡裙/泳装/职业装
+    ├── menswear.md                           # 男装：品牌语言、西装/衬衫/大衣/叠穿、鞋靴、中性方向
+    ├── male-portrait-guide.md                # 男性人像：脸与骨相、胡须发型、身形、姿势、专属负面词与示例
     ├── fabrics-colors.md                     # 面料、质感、色彩
     ├── jewelry-accessories.md                # 首饰、包、鞋、发饰
-    ├── brands.md                             # 品牌语言（Balenciaga、Valentino、Prada、The Row…）
+    ├── brands.md                             # 品牌语言（Balenciaga、Valentino、Prada、The Row…；女装为主，男装见 menswear.md）
     ├── realism-and-candid.md                 # 真实感与抓拍叙事
     ├── anti-ai-realism.md                    # 去 AI 感手册：面料/光线/骨相/手机随手拍/胶片锚点
     ├── pose-and-anatomy.md                   # 姿势、机位、人体结构硬性要求
