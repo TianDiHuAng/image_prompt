@@ -18,6 +18,8 @@ AI 生图 / 提示词相关的技能与提示词集合。
 - **覆盖品类**：针织开衫、毛衣裙、旗袍/新中式、丝袜与鞋履、蕾丝、真丝睡裙、泳装、职业装、礼服露背
 - **双模式路由**：`REAL` 写实摄影（默认）/ `PAINTERLY` 2.5D 厚涂，两种模式的肤质词与负面词严禁混用
 - **六种写法模式**：A 模块式、B 叙事分段式、C 随机池式、D 锁定式、E 一段式英文、F 八段式
+- **硬规则：负面词不进正文**——有独立负面输入口（SD/Flux 双框、MJ 的 `--no`）才填负面词；
+  只有正向文本框（H3 / Minimax 系等）时整段省略，全部改写为正向陈述（实测"不要插座"会召唤插座）
 
 ### 文件结构
 
@@ -32,7 +34,7 @@ fashion-prompt-artist/
     ├── realism-and-candid.md                 # 真实感与抓拍叙事
     ├── anti-ai-realism.md                    # 去 AI 感手册：面料/光线/骨相/手机随手拍/胶片锚点
     ├── pose-and-anatomy.md                   # 姿势、机位、人体结构硬性要求
-    ├── prompt-templates.md                   # 各模式模板与分类负面词库
+    ├── prompt-templates.md                   # 各模式模板与分类负面词库（仅用于有负面输入口的工作流）
     ├── painterly-mode.md                     # 2.5D 厚涂 / 韩漫模式
     ├── consistency-and-troubleshooting.md    # 随机池防失控、角色卡锁定、常见问题修正
     └── case-studies.md                       # 27 条真实提示词拆解
